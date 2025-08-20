@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: osm_etl_library
+Version: 0.1.0
+Requires-Dist: pandas
