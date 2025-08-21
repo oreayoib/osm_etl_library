@@ -191,7 +191,7 @@ class TransformPipelineReport(TransformPipeline):
         for area in self.areas:
             attr_report = AttributeReportTransformer(self.folder_path, area).transform()
             values_report = ValuesReportTransformer(self.folder_path, area).transform()
-            excel_dict[f'{area}_attribute_report'] = attr_report
+            excel_dict[f'{area}_attr_report'] = attr_report
             excel_dict[f'{area}_values_report'] = values_report
             
         return excel_dict

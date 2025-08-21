@@ -7,7 +7,6 @@ setup(
     install_requires=[
         "pandas",
         "openpyxl",
-        "matplotlib",
-        "os"
+        "matplotlib"
     ],
 )

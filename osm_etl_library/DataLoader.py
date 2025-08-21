@@ -38,6 +38,10 @@ class CSVLoader(DataLoader):
                 final_df = pd.concat([final_df, df], ignore_index=True)
             elif  final_df.empty:
                 final_df = df
-    
+            
+            if not final_df.empty:
+                final_df['unknown'] = ""
+                final_df.loc[df['feature_type'] == "unknown", 'unknown'] = "unknown"
+
         return final_df
         
