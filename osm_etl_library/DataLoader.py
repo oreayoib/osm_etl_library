@@ -41,7 +41,7 @@ class CSVLoader(DataLoader):
             
             if not final_df.empty:
                 final_df['unknown'] = ""
-                final_df.loc[df['feature_type'] == "unknown", 'unknown'] = "unknown"
+                final_df.loc[final_df['feature_type'] == "unknown", 'unknown'] = "unknown"
 
         return final_df
         
